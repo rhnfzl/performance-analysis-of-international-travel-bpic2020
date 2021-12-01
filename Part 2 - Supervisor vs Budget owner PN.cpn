@@ -1,0 +1,3721 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://cpntools.org/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="ProM.PetriNets"
+             version="6.10.149"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="Block1">
+        <id>Standard declarations</id>
+        <color id="Color1">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+      </block>
+          </globbox>
+    <page id="Page1">
+      <pageattr name="Supervisor vs Budget owner PN"/>
+      <place id="Place100">
+        <posattr x="517.500000"
+                 y="-194.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p9</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType100">
+          <posattr x="537.500000"
+                   y="-214.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark100">
+          <posattr x="537.500000"
+                   y="-174.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place101">
+        <posattr x="1177.500000"
+                 y="-184.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p11</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType101">
+          <posattr x="1197.500000"
+                   y="-204.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark101">
+          <posattr x="1197.500000"
+                   y="-164.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place102">
+        <posattr x="847.500000"
+                 y="-279.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p12</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType102">
+          <posattr x="867.500000"
+                   y="-299.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark102">
+          <posattr x="867.500000"
+                   y="-259.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place103">
+        <posattr x="1177.500000"
+                 y="-266.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p13</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType103">
+          <posattr x="1197.500000"
+                   y="-286.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark103">
+          <posattr x="1197.500000"
+                   y="-246.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place104">
+        <posattr x="12.500000"
+                 y="-242.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>source</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType104">
+          <posattr x="32.500000"
+                   y="-262.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark104">
+          <posattr x="32.500000"
+                   y="-222.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </initmark>
+      </place>
+      <place id="Place105">
+        <posattr x="167.500000"
+                 y="-245.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p6</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType105">
+          <posattr x="187.500000"
+                   y="-265.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark105">
+          <posattr x="187.500000"
+                   y="-225.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place106">
+        <posattr x="847.500000"
+                 y="-168.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p5</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType106">
+          <posattr x="867.500000"
+                   y="-188.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark106">
+          <posattr x="867.500000"
+                   y="-148.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place107">
+        <posattr x="1002.500000"
+                 y="-132.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p10</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType107">
+          <posattr x="1022.500000"
+                   y="-152.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark107">
+          <posattr x="1022.500000"
+                   y="-112.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place108">
+        <posattr x="1332.500000"
+                 y="-256.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>sink</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType108">
+          <posattr x="1352.500000"
+                   y="-276.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark108">
+          <posattr x="1352.500000"
+                   y="-236.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place109">
+        <posattr x="672.500000"
+                 y="-162.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p4</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType109">
+          <posattr x="692.500000"
+                   y="-182.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark109">
+          <posattr x="692.500000"
+                   y="-142.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place110">
+        <posattr x="1002.500000"
+                 y="-234.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p2</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType110">
+          <posattr x="1022.500000"
+                   y="-254.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark110">
+          <posattr x="1022.500000"
+                   y="-214.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place111">
+        <posattr x="672.500000"
+                 y="-276.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p0</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType111">
+          <posattr x="692.500000"
+                   y="-296.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark111">
+          <posattr x="692.500000"
+                   y="-256.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <place id="Place112">
+        <posattr x="342.500000"
+                 y="-196.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>p8</text>
+        <ellipse w="25.000000"
+                 h="25.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="PlaceType112">
+          <posattr x="362.500000"
+                   y="-216.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">UNIT</text>
+        </type>
+        <initmark id="PlaceMark112">
+          <posattr x="362.500000"
+                   y="-176.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </initmark>
+      </place>
+      <trans id="Trans113"
+             explicit="false">
+        <posattr x="430.000000"
+                 y="-194.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration APPROVED by ADMINISTRATION</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond113">
+          <posattr x="390.000000"
+                   y="-164.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime113">
+          <posattr x="470.000000"
+                   y="-164.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode113">
+          <posattr x="470.000000"
+                   y="-224.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio113">
+          <posattr x="390.000000"
+                   y="-224.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans114"
+             explicit="false">
+        <posattr x="1255.000000"
+                 y="-166.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t10</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond114">
+          <posattr x="1215.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime114">
+          <posattr x="1295.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode114">
+          <posattr x="1295.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio114">
+          <posattr x="1215.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans115"
+             explicit="false">
+        <posattr x="925.000000"
+                 y="-304.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t19</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond115">
+          <posattr x="885.000000"
+                   y="-274.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime115">
+          <posattr x="965.000000"
+                   y="-274.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode115">
+          <posattr x="965.000000"
+                   y="-334.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio115">
+          <posattr x="885.000000"
+                   y="-334.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans116"
+             explicit="false">
+        <posattr x="1090.000000"
+                 y="-250.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration FINAL_APPROVED by SUPERVISOR</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond116">
+          <posattr x="1050.000000"
+                   y="-220.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime116">
+          <posattr x="1130.000000"
+                   y="-220.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode116">
+          <posattr x="1130.000000"
+                   y="-280.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio116">
+          <posattr x="1050.000000"
+                   y="-280.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans117"
+             explicit="false">
+        <posattr x="90.000000"
+                 y="-242.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t20</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond117">
+          <posattr x="50.000000"
+                   y="-212.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime117">
+          <posattr x="130.000000"
+                   y="-212.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode117">
+          <posattr x="130.000000"
+                   y="-272.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio117">
+          <posattr x="50.000000"
+                   y="-272.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans118"
+             explicit="false">
+        <posattr x="925.000000"
+                 y="-144.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t2</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond118">
+          <posattr x="885.000000"
+                   y="-114.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime118">
+          <posattr x="965.000000"
+                   y="-114.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode118">
+          <posattr x="965.000000"
+                   y="-174.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio118">
+          <posattr x="885.000000"
+                   y="-174.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans119"
+             explicit="false">
+        <posattr x="760.000000"
+                 y="-161.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration APPROVED by BUDGET OWNER</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond119">
+          <posattr x="720.000000"
+                   y="-131.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime119">
+          <posattr x="800.000000"
+                   y="-131.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode119">
+          <posattr x="800.000000"
+                   y="-191.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio119">
+          <posattr x="720.000000"
+                   y="-191.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans120"
+             explicit="false">
+        <posattr x="1255.000000"
+                 y="-226.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t11</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond120">
+          <posattr x="1215.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime120">
+          <posattr x="1295.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode120">
+          <posattr x="1295.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio120">
+          <posattr x="1215.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans121"
+             explicit="false">
+        <posattr x="595.000000"
+                 y="-166.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t9</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond121">
+          <posattr x="555.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime121">
+          <posattr x="635.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode121">
+          <posattr x="635.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio121">
+          <posattr x="555.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans122"
+             explicit="false">
+        <posattr x="255.000000"
+                 y="-198.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration SUBMITTED by EMPLOYEE</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond122">
+          <posattr x="215.000000"
+                   y="-168.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime122">
+          <posattr x="295.000000"
+                   y="-168.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode122">
+          <posattr x="295.000000"
+                   y="-228.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio122">
+          <posattr x="215.000000"
+                   y="-228.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans123"
+             explicit="false">
+        <posattr x="1255.000000"
+                 y="-286.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t17</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond123">
+          <posattr x="1215.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime123">
+          <posattr x="1295.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode123">
+          <posattr x="1295.000000"
+                   y="-316.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio123">
+          <posattr x="1215.000000"
+                   y="-316.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans124"
+             explicit="false">
+        <posattr x="595.000000"
+                 y="-226.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t7</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond124">
+          <posattr x="555.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime124">
+          <posattr x="635.000000"
+                   y="-196.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode124">
+          <posattr x="635.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio124">
+          <posattr x="555.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans125"
+             explicit="false">
+        <posattr x="760.000000"
+                 y="-266.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration REJECTED by BUDGET OWNER</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond125">
+          <posattr x="720.000000"
+                   y="-236.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime125">
+          <posattr x="800.000000"
+                   y="-236.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode125">
+          <posattr x="800.000000"
+                   y="-296.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio125">
+          <posattr x="720.000000"
+                   y="-296.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans126"
+             explicit="false">
+        <posattr x="925.000000"
+                 y="-204.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t3</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond126">
+          <posattr x="885.000000"
+                   y="-174.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime126">
+          <posattr x="965.000000"
+                   y="-174.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode126">
+          <posattr x="965.000000"
+                   y="-234.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio126">
+          <posattr x="885.000000"
+                   y="-234.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans127"
+             explicit="false">
+        <posattr x="595.000000"
+                 y="-106.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t6</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond127">
+          <posattr x="555.000000"
+                   y="-76.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime127">
+          <posattr x="635.000000"
+                   y="-76.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode127">
+          <posattr x="635.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio127">
+          <posattr x="555.000000"
+                   y="-136.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans128"
+             explicit="false">
+        <posattr x="1090.000000"
+                 y="-158.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>Declaration REJECTED by SUPERVISOR</text>
+        <box w="50.000000"
+             h="40.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond128">
+          <posattr x="1050.000000"
+                   y="-128.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime128">
+          <posattr x="1130.000000"
+                   y="-128.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode128">
+          <posattr x="1130.000000"
+                   y="-188.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio128">
+          <posattr x="1050.000000"
+                   y="-188.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <trans id="Trans129"
+             explicit="false">
+        <posattr x="595.000000"
+                 y="-286.000000"/>
+        <fillattr colour="Black"
+                  pattern=""
+                  filled="true"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>t8</text>
+        <box w="30.000000"
+             h="30.000000"/>
+        <binding x="7.200000"
+                 y="-3.000000"/>
+        <cond id="TransCond129">
+          <posattr x="555.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </cond>
+        <time id="TransTime129">
+          <posattr x="635.000000"
+                   y="-256.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </time>
+        <code id="TransCode129">
+          <posattr x="635.000000"
+                   y="-316.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </code>
+        <priority id="TransPrio129">
+          <posattr x="555.000000"
+                   y="-316.000000"/>
+          <fillattr colour="Black"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149"/>
+        </priority>
+      </trans>
+      <arc id="Arc106x118"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans118"/>
+        <placeend idref="Place106"/>
+        <annot id="ArcAnnot106x118">
+          <posattr x="886.250000"
+                   y="-156.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc100x121"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans121"/>
+        <placeend idref="Place100"/>
+        <annot id="ArcAnnot100x121">
+          <posattr x="556.250000"
+                   y="-180.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc101x120"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans120"/>
+        <placeend idref="Place101"/>
+        <annot id="ArcAnnot101x120">
+          <posattr x="1216.250000"
+                   y="-205.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc112x113"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans113"/>
+        <placeend idref="Place112"/>
+        <annot id="ArcAnnot112x113">
+          <posattr x="386.250000"
+                   y="-195.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc129x111"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans129"/>
+        <placeend idref="Place111"/>
+        <annot id="ArcAnnot129x111">
+          <posattr x="633.750000"
+                   y="-281.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc115x105"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans115"/>
+        <placeend idref="Place105"/>
+        <bendpoint id="ArcPoint1x115x105"
+                   serial="1">
+          <posattr x="847.500000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint2x115x105"
+                   serial="2">
+          <posattr x="760.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint3x115x105"
+                   serial="3">
+          <posattr x="672.500000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint4x115x105"
+                   serial="4">
+          <posattr x="595.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint5x115x105"
+                   serial="5">
+          <posattr x="517.500000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint6x115x105"
+                   serial="6">
+          <posattr x="430.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint7x115x105"
+                   serial="7">
+          <posattr x="342.500000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint8x115x105"
+                   serial="8">
+          <posattr x="255.000000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ArcAnnot115x105">
+          <posattr x="517.500000"
+                   y="-361.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc101x114"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans114"/>
+        <placeend idref="Place101"/>
+        <annot id="ArcAnnot101x114">
+          <posattr x="1216.250000"
+                   y="-175.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc123x108"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans123"/>
+        <placeend idref="Place108"/>
+        <annot id="ArcAnnot123x108">
+          <posattr x="1293.750000"
+                   y="-271.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc114x105"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans114"/>
+        <placeend idref="Place105"/>
+        <bendpoint id="ArcPoint1x114x105"
+                   serial="1">
+          <posattr x="1177.500000"
+                   y="-349.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint2x114x105"
+                   serial="2">
+          <posattr x="1090.000000"
+                   y="-349.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint3x114x105"
+                   serial="3">
+          <posattr x="1002.500000"
+                   y="-349.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint4x114x105"
+                   serial="4">
+          <posattr x="925.000000"
+                   y="-349.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint5x114x105"
+                   serial="5">
+          <posattr x="847.500000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint6x114x105"
+                   serial="6">
+          <posattr x="760.000000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint7x114x105"
+                   serial="7">
+          <posattr x="672.500000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint8x114x105"
+                   serial="8">
+          <posattr x="595.000000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint9x114x105"
+                   serial="9">
+          <posattr x="517.500000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint10x114x105"
+                   serial="10">
+          <posattr x="430.000000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint11x114x105"
+                   serial="11">
+          <posattr x="342.500000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint12x114x105"
+                   serial="12">
+          <posattr x="255.000000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ArcAnnot114x105">
+          <posattr x="672.500000"
+                   y="-331.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc120x108"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans120"/>
+        <placeend idref="Place108"/>
+        <annot id="ArcAnnot120x108">
+          <posattr x="1293.750000"
+                   y="-241.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc106x126"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans126"/>
+        <placeend idref="Place106"/>
+        <annot id="ArcAnnot106x126">
+          <posattr x="886.250000"
+                   y="-186.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc119x106"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans119"/>
+        <placeend idref="Place106"/>
+        <annot id="ArcAnnot119x106">
+          <posattr x="803.750000"
+                   y="-164.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc105x122"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans122"/>
+        <placeend idref="Place105"/>
+        <annot id="ArcAnnot105x122">
+          <posattr x="211.250000"
+                   y="-221.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc126x110"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans126"/>
+        <placeend idref="Place110"/>
+        <annot id="ArcAnnot126x110">
+          <posattr x="963.750000"
+                   y="-219.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc124x110"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans124"/>
+        <placeend idref="Place110"/>
+        <bendpoint id="ArcPoint1x124x110"
+                   serial="1">
+          <posattr x="672.500000"
+                   y="-216.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint2x124x110"
+                   serial="2">
+          <posattr x="760.000000"
+                   y="-216.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint3x124x110"
+                   serial="3">
+          <posattr x="847.500000"
+                   y="-216.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint4x124x110"
+                   serial="4">
+          <posattr x="925.000000"
+                   y="-249.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ArcAnnot124x110">
+          <posattr x="847.500000"
+                   y="-216.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc100x124"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans124"/>
+        <placeend idref="Place100"/>
+        <annot id="ArcAnnot100x124">
+          <posattr x="556.250000"
+                   y="-210.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc104x117"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans117"/>
+        <placeend idref="Place104"/>
+        <annot id="ArcAnnot104x117">
+          <posattr x="51.250000"
+                   y="-242.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc107x128"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans128"/>
+        <placeend idref="Place107"/>
+        <annot id="ArcAnnot107x128">
+          <posattr x="1046.250000"
+                   y="-145.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc118x107"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans118"/>
+        <placeend idref="Place107"/>
+        <annot id="ArcAnnot118x107">
+          <posattr x="963.750000"
+                   y="-138.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc100x129"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans129"/>
+        <placeend idref="Place100"/>
+        <annot id="ArcAnnot100x129">
+          <posattr x="556.250000"
+                   y="-240.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc109x119"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans119"/>
+        <placeend idref="Place109"/>
+        <annot id="ArcAnnot109x119">
+          <posattr x="716.250000"
+                   y="-161.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc100x127"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans127"/>
+        <placeend idref="Place100"/>
+        <annot id="ArcAnnot100x127">
+          <posattr x="556.250000"
+                   y="-150.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc111x125"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans125"/>
+        <placeend idref="Place111"/>
+        <annot id="ArcAnnot111x125">
+          <posattr x="716.250000"
+                   y="-271.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc127x107"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans127"/>
+        <placeend idref="Place107"/>
+        <bendpoint id="ArcPoint1x127x107"
+                   serial="1">
+          <posattr x="672.500000"
+                   y="-99.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint2x127x107"
+                   serial="2">
+          <posattr x="760.000000"
+                   y="-99.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint3x127x107"
+                   serial="3">
+          <posattr x="847.500000"
+                   y="-99.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <bendpoint id="ArcPoint4x127x107"
+                   serial="4">
+          <posattr x="925.000000"
+                   y="-99.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+        </bendpoint>
+        <annot id="ArcAnnot127x107">
+          <posattr x="847.500000"
+                   y="-99.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc102x115"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans115"/>
+        <placeend idref="Place102"/>
+        <annot id="ArcAnnot102x115">
+          <posattr x="886.250000"
+                   y="-291.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc122x112"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans122"/>
+        <placeend idref="Place112"/>
+        <annot id="ArcAnnot122x112">
+          <posattr x="298.750000"
+                   y="-197.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc128x101"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans128"/>
+        <placeend idref="Place101"/>
+        <annot id="ArcAnnot128x101">
+          <posattr x="1133.750000"
+                   y="-171.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc125x102"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans125"/>
+        <placeend idref="Place102"/>
+        <annot id="ArcAnnot125x102">
+          <posattr x="803.750000"
+                   y="-272.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc121x109"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans121"/>
+        <placeend idref="Place109"/>
+        <annot id="ArcAnnot121x109">
+          <posattr x="633.750000"
+                   y="-164.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc103x123"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans123"/>
+        <placeend idref="Place103"/>
+        <annot id="ArcAnnot103x123">
+          <posattr x="1216.250000"
+                   y="-276.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc113x100"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans113"/>
+        <placeend idref="Place100"/>
+        <annot id="ArcAnnot113x100">
+          <posattr x="473.750000"
+                   y="-194.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc116x103"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans116"/>
+        <placeend idref="Place103"/>
+        <annot id="ArcAnnot116x103">
+          <posattr x="1133.750000"
+                   y="-258.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc117x105"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans117"/>
+        <placeend idref="Place105"/>
+        <annot id="ArcAnnot117x105">
+          <posattr x="128.750000"
+                   y="-243.500000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <arc id="Arc110x116"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="Trans116"/>
+        <placeend idref="Place110"/>
+        <annot id="ArcAnnot110x116">
+          <posattr x="1046.250000"
+                   y="-242.000000"/>
+          <fillattr colour="White"
+                    pattern=""
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="1"
+                    type="solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="ProM.PetriNets"
+                version="6.10.149">1`()</text>
+        </annot>
+      </arc>
+      <constraints/>
+    </page>
+    <instances>
+      <instance id="Instance1"
+                page="Page1"/>
+    </instances>
+    <options>
+      <option name="realtimestamp">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="fair_be">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="global_fairness">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="Binder1"
+                 x="300"
+                 y="100"
+                 width="1000"
+                 height="600">
+        <sheets>
+          <cpnsheet id="Sheet1"
+                    panx="-462.500000"
+                    pany="-242.000000"
+                    zoom="1.000000"
+                    instance="Instance1">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true">
+        <IndexNode expanded="false">
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>
