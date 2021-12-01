@@ -121,6 +121,75 @@ Figure 2 shows part of a directly-follows graph that was generated. Arc A shows 
 However, after sending reminders, employees seem to respond within 7 days (median), this is similar performance to when they do not receive reminders (arc B). This may indicate that reminders seem to be somewhat effective. Note that sending reminders is fairly cheap: it’s often not much more than an automatic, scheduled e-mail. We would therefore suggest to reduce the time before sending a reminder to address the bad performance of arc A.
 
 
+#### Bottlenecks based on roles
+
+
+When looking at the process description, we noticed that the budget owner can be skipped in the process. This is also confirmed by the given data for all departments which had more than 10 cases. It is interesting to verify whether the budget owner is a bottleneck.
+
+To verify that, we created a subset that focuses on the declaration approval and rejection by the budget owner and supervisor. The implementation of the subset is explained in the section 3.1.2. By focusing on just the process which involves the budget owner and the supervisor, we are able to determine whether a bottleneck is created by one of those two roles.
+
+We created a Petri net using the Interactive Data-aware Heuristic Miner, for details see 3.2.2. The fitness, precision and generalisation of this model are checked against our subset using Replay a Log on a Petri Net for Conformance Analysis and Measure Precision/Generalization: trace fitness = 1, precision = 0.89 and generalization = 0.98.
+
+
+This model shows high fitness and also high generalization. The precision is lower, so there is some behavior possible in the model which is not seen in the log. This can be explained due to our process having a loop. Since we’re confident that this model accurately represents the subset, we use it to determine the bottlenecks. The plugin Replay a Log on Petri Net for Performance/Conformance Analysis is used to obtain Figure 3. This model should be interpreted in the same manner as Figure 1.
+
+Notice that the approval and declaration steps by the budget owner or supervisor take longer than the other steps. Furthermore, on average, the budget owner and supervisor take the same amount of time to approve a declaration. However, where the budget owner takes less time to reject a declaration, the supervisor takes more time to reject a declaration. Unfortunately, it’s unclear from this model whether the supervisor is slow due to the budget owner being slow (and preceding the supervisor) or if the supervisor themselves is slow. Therefore, we are interested at the sojourn time of the supervisor preceded by the budget owner. We use Disco for this because we have noticed that there can be a large difference between the mean and median of the sojourn time and the performance analysis only shows the average sojourn time.
+
+![Architecture](/img/Performance_budget_owner_vs_supervisor.png "Figure 3: Petri net used for performance analysis on the log and model.")
+
+
+Table 1 shows an overview of the performance of several activities for the different subsets. We can see that the mean for the approved cases does not differ significanlty (around 3 days regardless of the involvement of the budget owner), while it does for the rejected cases. However, the median duration between activities differs significantly between both the approved and rejected cases. When the budget owner is not involved, the median duration is diminished for the case of approval and enlarged for the case of rejection, however rejection occurs rarely.
+
+
+To conclude, we have two possible paths a case can take (shown in Table 2). Passing via the budget owner adds a lot of time to a case, so this forms a bottleneck. A possibility to tackle this bottleneck could be to ‘skip’ this step in the process, which is often already done.
+
+
+
+#### Bottlenecks based on manual vs. automatic verification steps
+
+
+In this subsection, it is interesting to find out what is causing the skewness in the performance of the model, especially very large skewness in the sojourn time for Declaration APPROVED/REJECTED by ADMINISTRATION. Preparation of subset for this analysis has been discussed in Appendix 3.1.3.
+
+
+We noticed a large difference between the mean and median duration of the sojourn time for Declaration APPROVED/REJECTED by ADMINISTRATION. The mean duration is 43.2 hrs, while the median duration is 7.5 minutes. We found these values using Disco. Furthermore, we found that there are 1253 traces that performed these events within one minute of submitting a request. Our hypothesis is that there is an automated process in place that determines whether a declaration can be approved or rejected. If the automated process cannot make a decision (edge cases), human intervention is required. This explains why this process can also take longer than a minute. If there is some automated process in place, this process will be deterministic. We will try to find out whether there is an automated process by finding data attributes that determine whether this decision is made within one minute, and thus by the automated process, or not.
+
+
+We sub-divided the event log into two subsets under 1 minute and on and over 1 minute as discussed in Appendix subsection 3.1.3. This splitting allowed us to compare the two types of subsets directly and derive a Decision Tree to determine whether this event happened within one minute based on the labelling. The “Yes” label indicates completed within a minute and “No” indicates cases took more than a minute. This decision tree could help us to understand the automated process.
+
+
+The first decision trees found were of no significant value even after hyperparameter optimization. However, each decision tree found using random forest made use of the following three decision variables: Permit OrganizationEntity, Permit RequestedBudget, and Amount with an accuracy of 65.71%, i.e. decision tree correctly predicts considering the said attributes. This decision tree has been discussed in 3.3.4 from which we derive that Permit OrganizationEntity has no significance as the results were random for each organization unit (department) and the assumed automated process rule is the same for all of them.
+
+
+ext, we took the PermitLogWithClassifier.xes log since it had the activities Declaration APPROVED/REJECTED by ADMINISTRATION and prepared the subset as discussed in Appendix 3.1.3 and joined it with the labelled subset of International Travel. After doing feature engineering (discussed in 3.3.1), a new attribute Overspent was found along with previous decision variables except for Permit OrganizationEntity. Consequently, we performed different classification techniques (discussed in section 3.3.2) and chose the decision tree technique since the accuracy was 68% in each technique.
+
+
+The decision tree was built on same three departments discussed in 3.3.4 namely: 65456, 65458 and 65455. Figure 4 shows the decision tree, where Permit RequestedBudget is at the root followed by Overspent, and the Amount at the last node. Here “Yes” indicates completed within a minute and “No” indicates cases took more than a minute. The discretized process of continuous attributes has been briefly discussed in Appendix subsection 3.1.3. Even after sampling and hyperparameter optimization (as discussed in 3.3.3), we again did not get a significant decision tree (Figure 4), but it is more explainable and generalizable than the previous decision tree and has the accuracy of 69.52%. The conclusions we may want to draw from Figure 4 is that if the Permit RequestedBudget is within the 332.1 EUR and the Amount declared is within the budget, it will be auto approved most of the time.
+
+![Architecture](/img/DecisionTreeFinal_.png "Figure 4: Decision Tree with attributes \texttt{Permit RequestedBudget")
+
+We also approached this problem using the Multi-Perspective Process Explorer in the hope this would give us some decision variables that indicated why some approvals/rejection seem to happen automatically while others don’t. For this, we selected the traces that occurred in 2018 and that contained Declaration REJECTED/ACCEPTED by ADMINISTRATION from the International Declarations log. We only selected the traces that occurred at least 50 times. We created a Python script that creates a distinction between the activities we suppose are done automatically and manually. The decision threshold was set at one minute. This script takes the filtered event log as an input (CSV) and outputs the new event log in-place.
+
+Subsequently, the output of the script is fed into ProM to create a Petri net using the Interactive Data-Aware Heuristics Miner. We found a trace fitness of 0.94 when we replayed the log, a precision of 0.93 and a generalization of 0.99. The non-perfect precision can be explained due to the existence of loops in the process. These measures are quite good, so we ran Multi-Perspective Process Explorer on this model and log. We used the ‘Data Discovery Model’ as MPE mode, and configured a decision tree. Unfortunately, we were not able to get decision variables visible on the arcs. We tried different configuration options, but it never seemed to show any decision variable. Hence, this approach did not give any insight about why some declarations are approved/rejected that fast. We decided to not include the model because it does not show any useful information.
+
+
+Due to the low accuracy of the decision tree learned on the trace attributes, we can neither confirm nor reject our hypothesis as the decision tree is not entirely helpful in finding out the rules and confirm if there is an automated process. Unfortunately, the Interactive Data-Aware Heuristics Miner did not give any extra insight into this phenomenon. Further research could look into combinations of available attributes or discovering new attributes that are currently not available to us. Additionally, we recommend to find a better foundation to decide which activities are done automatically and which are done manually. We chose a threshold of one minute. However, to support this decision threshold, we need to consult domain experts. It could be that we set our threshold too low and therefore we were not able to find significant differences in behavior.
+
+
+### Conclusion and Suggestions
+
+
+This report looked at identifying bottlenecks in the submission process of international travel declarations. The performance is analyzed based on three different subquestions. Each question is aimed at diving into a specific part of the process to identify possible bottlenecks or discover peculiarities and possibly suggest improvements. The first subquestion looked into bottlenecks during cases that were rejected at least once. It was found that the employees seem to cause a bottleneck as they are slow to respond when their application is rejected. This may seem like an issue that is not relevant to the university (as it’s a loss for the employee, not the university), but it might have indirect, undesirable effects. To remedy this, it seems (somewhat) effective to send automatic reminders. Since reminders are cheap, the costs are negligible and the rewards might be non-zero.
+
+
+The second subquestion looked into the difference in performance between different roles. We found that the budget owner may cause a significant bottleneck. We are unsure what the root cause of this problem is: one of our hypotheses is that this is caused by the handover of work between the budget owner and supervisor that creates additional delay. Due to space and time constraints, we have not looked further into this topic, but this is highly suggested in further research. To remedy this problem, one could remove the budget owner entirely (if possible), or reduce the number of cases that pass through the budget owner. Perhaps it is possible to automate some part of their verification process to reduce the work done by the budget owner.
+
+
+The final and third subquestion looked into the rules deriving automated and manual handling of administrative approval and rejection. We found that the dataset does not have enough meaningful attributes which could have given a clear picture of the rule deriving the automated approval done within 1 minute by the administration. However, the derived model indicates an automated process running in the backend but not clearly confirms it. Hence, for future research, we suggest looking into what drives human intervention for the approval of an application (by the administration). One of the major shortcomings of the found model was that it wasn’t accurate. It might be the case that there are some hidden variables (variables that are not in our dataset) that are able to explain the divide. We can therefore offer no concrete recommendation, and instead suggest further research into this area.
+
+Although the report was aimed at identifying bottlenecks in the process, we aimed to look for specific instances of bottlenecks, each of them tackled in a subquestion. With the answer to each subquestion, we hoped to find a suitable answer to solving some of the bottlenecks. These suggestions are limited by the lack of domain knowledge. To verify whether these suggestions are possible, domain experts need to be consulted. Our analysis for each of the subquestions is always done using a case-to-case analysis, which has limits regarding its identifying power. One of the interesting trends in the data is that the distribution of requests was not evenly spread over the year. Instead, we saw peaks before the holidays. We have not taken these peaks into account, but they could lead to dynamic bottlenecks. Focusing on specific cases will not reveal whether there is an interaction between cases; a large increase in incoming requests will put additional pressure on the staff and hence increase processing time, but you will not find this if you merely look at the activities at the case level. Future research should therefore take these inter-case dynamics into account.
+
+
+
 
 
 
