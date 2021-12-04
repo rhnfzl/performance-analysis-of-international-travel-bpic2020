@@ -5,7 +5,10 @@
 ## Objective
 
 A process-mining expert should be able to reproduce the work and apply it to event-data. However, the main audience is the Finance and Control department, understand, and accept the analysis. Technical details about generating subsets and discovering models is intended for the process-mining experts.
+
+
 ---
+
 ## Process and Data Description
 
 ### Process Description
