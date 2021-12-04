@@ -84,7 +84,7 @@ Finally, one of the distinguishing patterns that we found in the data is that th
 
 #### Bottlenecks introduced by rejecting requests
 
-For this subquestion, it is interesting to look at any bottlenecks that occur in cases with rejected declarations. We have made use of the event log based on international travel declarations. The subset, as described in section [Declarations rejected at least once](/README.md#declarations-rejected-at-least-once), focuses on travel declarations that are submitted in 2018 and that have been rejected at least once.
+For this subquestion, it is interesting to look at any bottlenecks that occur in cases with rejected declarations. We have made use of the event log based on international travel declarations. The subset, as described in section [Declarations rejected at least once](/#declarations-rejected-at-least-once), focuses on travel declarations that are submitted in 2018 and that have been rejected at least once.
 
 To identify performance bottlenecks, we will use the Interactive Data-aware Heuristic miner to create a causal net. From the causal net, we convert it to a Petri net and then use the log and Petri net to use the plugin Replay a Log on Petri Net for Performance / Conformance Analysis to obtain Figure 1. Annotated in the top right corner are the fitness, precision and generalization of the model against the filtered data. The color of the transition show the average sojourn time, while the color of the places indicate average waiting time. The more red a place or transition is colored, the more time it takes for this transition to happen. The black transitions are τ -transitions, and do not have a sojourn time. The average sojourn time is indicated in between brackets after the name of the transition.
 
