@@ -84,13 +84,19 @@ Finally, one of the distinguishing patterns that we found in the data is that th
 
 #### Bottlenecks introduced by rejecting requests
 
-For this subquestion, it is interesting to look at any bottlenecks that occur in cases with rejected declarations. We have made use of the event log based on international travel declarations. The subset, as described in section [Declarations rejected at least once](/#declarations-rejected-at-least-once), focuses on travel declarations that are submitted in 2018 and that have been rejected at least once.
+For this subquestion, it is interesting to look at any bottlenecks that occur in cases with rejected declarations. We have made use of the event log based on international travel declarations. The subset, as described in section [Declarations rejected at least once](/README.md#declarations-rejected-at-least-once), focuses on travel declarations that are submitted in 2018 and that have been rejected at least once.
 
 To identify performance bottlenecks, we will use the Interactive Data-aware Heuristic miner to create a causal net. From the causal net, we convert it to a Petri net and then use the log and Petri net to use the plugin Replay a Log on Petri Net for Performance / Conformance Analysis to obtain Figure 1. Annotated in the top right corner are the fitness, precision and generalization of the model against the filtered data. The color of the transition show the average sojourn time, while the color of the places indicate average waiting time. The more red a place or transition is colored, the more time it takes for this transition to happen. The black transitions are τ -transitions, and do not have a sojourn time. The average sojourn time is indicated in between brackets after the name of the transition.
 
-![Architecture](/img/RejectedTravelDeclarations-ProM-annotated.png "Figure 1: Petri net of cases with at least one rejected request")
+![Architecture](/img/RejectedTravelDeclarations-ProM-annotated.png)
 
-The loop on the top left shows the process of the employee submitting a declaration and it being rejected by the administration. Following that rejection, the employee should also reject their submission before they can submit a new travel declaration. An interesting finding is that both transitions Rejected by Employee and Rejected by Administration stand out due to their large mean sojourn time (3.41 days and 2.11 days respectively). However, the mean is heavily impacted by large outliers. If we look at the median sojourn time (which does not suffer from this problem), we find that Rejected by Employee has a median sojourn time of 1.82 days and Rejected by Administration 10.9 minutes. This means that the distribution of sojourn times is heavily skewed by cases with large sojourn times. Since Rejected by Employee has a mean and median sojourn time that is much closer to each other, we can conclude that it is a major contributor to delays, while Rejected by Administration is not. This problem of the discrepancy between the median and mean sojourn times is interesting by itself and will be discussed in section ```Bottlenecks based on manual vs. automatic verification steps```. We will not discuss this here.
+<figcaption>
+
+Figure 1: Petri net of cases with at least one rejected request
+
+</figcaption>
+
+The loop on the top left shows the process of the employee submitting a declaration and it being rejected by the administration. Following that rejection, the employee should also reject their submission before they can submit a new travel declaration. An interesting finding is that both transitions Rejected by Employee and Rejected by Administration stand out due to their large mean sojourn time (3.41 days and 2.11 days respectively). However, the mean is heavily impacted by large outliers. If we look at the median sojourn time (which does not suffer from this problem), we find that Rejected by Employee has a median sojourn time of 1.82 days and Rejected by Administration 10.9 minutes. This means that the distribution of sojourn times is heavily skewed by cases with large sojourn times. Since Rejected by Employee has a mean and median sojourn time that is much closer to each other, we can conclude that it is a major contributor to delays, while Rejected by Administration is not. This problem of the discrepancy between the median and mean sojourn times is interesting by itself and will be discussed in section [Bottlenecks based on manual vs. automatic verification steps](/README.md#bottlenecks-based-on-manual-vs-automatic-verification-steps). We will not discuss this here.
 
 Another bottleneck seems to occur at the transition Approved by Budget Owner, but this is actually not true: the median sojourn time of this transition is only 20 hours. Note that the loop in the top left corner allows the model to have good generalization, but also good precision. The loop is very specific in its behavior as it only allows a certain sequence of activities to be repeated.
 
@@ -98,11 +104,17 @@ Another bottleneck seems to occur at the transition Approved by Budget Owner, bu
 
 We’ve noticed that employees are slow to reject their application. In a sense this does not pose an immediate problem to the university, since it’s the loss of the employee that the application takes so long. However, it is still beneficial to the university to keep the average duration of a travel declaration case low: it keeps the satisfaction of their employees high and it decreases the size of the backlog. If employees decide to resubmit their application all at the same time, this will cause avoidable strain on the staff that needs to verify the requests, if there is a backlog.
 
-Hence, we would like to provide a few suggestions to reduce or perhaps even remove the bottleneck: the university ought to send reminders to employees who have not made a resubmission after the rejection of their travel declaration. To verify whether reminders actually improve the response time of employees, we took the same subset as described in section 3.1.1 and also included the End trip activity in the cases. We want to have this activity included as reminders are only send after the trip of the employee has ended.
+Hence, we would like to provide a few suggestions to reduce or perhaps even remove the bottleneck: the university ought to send reminders to employees who have not made a resubmission after the rejection of their travel declaration. To verify whether reminders actually improve the response time of employees, we took the same subset as described in section [Declarations rejected at least once](/README.md#declarations-rejected-at-least-once) and also included the End trip activity in the cases. We want to have this activity included as reminders are only send after the trip of the employee has ended.
 
 Figure 2 shows part of a directly-follows graph that was generated. Arc A shows that it takes a long time to send reminders (after ending a trip). It is difficult to send reminders exactly two weeks after employees have finished their trip, because the end activity does not necessarily indicate the end of the trip of an employee.
 
-![Architecture](/img/Internationaltraveldeclarationswithreminders-withlabels.png "Figure  2:  Part  of  a  directly-follows  graph  to  inspect  the  results  of  sending  reminders.   Theprimary  performance  metric  is  the  median  duration,  while  the  second  performance  metric  isthe mean duration")
+![Architecture](/img/Internationaltraveldeclarationswithreminders-withlabels.png)
+
+<figcaption>
+
+Figure  2:  Part  of  a  directly-follows  graph  to  inspect  the  results  of  sending  reminders.   Theprimary  performance  metric  is  the  median  duration,  while  the  second  performance  metric  isthe mean duration
+
+</figcaption>
 
 However, after sending reminders, employees seem to respond within 7 days (median), this is similar performance to when they do not receive reminders (arc B). This may indicate that reminders seem to be somewhat effective. Note that sending reminders is fairly cheap: it’s often not much more than an automatic, scheduled e-mail. We would therefore suggest to reduce the time before sending a reminder to address the bad performance of arc A.
 
@@ -110,15 +122,21 @@ However, after sending reminders, employees seem to respond within 7 days (media
 
 When looking at the process description, we noticed that the budget owner can be skipped in the process. This is also confirmed by the given data for all departments which had more than 10 cases. It is interesting to verify whether the budget owner is a bottleneck.
 
-To verify that, we created a subset that focuses on the declaration approval and rejection by the budget owner and supervisor. The implementation of the subset is explained in the section 3.1.2. By focusing on just the process which involves the budget owner and the supervisor, we are able to determine whether a bottleneck is created by one of those two roles.
+To verify that, we created a subset that focuses on the declaration approval and rejection by the budget owner and supervisor. The implementation of the subset is explained in the section [Declarations approved or rejected by Budget Owner or supervisor](/README.md#declarations-approved-or-rejected-by-budget-owner-or-supervisor). By focusing on just the process which involves the budget owner and the supervisor, we are able to determine whether a bottleneck is created by one of those two roles.
 
-We created a Petri net using the Interactive Data-aware Heuristic Miner, for details see 3.2.2. The fitness, precision and generalisation of this model are checked against our subset using Replay a Log on a Petri Net for Conformance Analysis and Measure Precision/Generalization: trace fitness = 1, precision = 0.89 and generalization = 0.98.
+We created a Petri net using the Interactive Data-aware Heuristic Miner, for details see [Declaration process that are handled by budget owner and/or supervisor](/README.md#declaration-process-that-are-handled-by-budget-owner-andor-supervisor). The fitness, precision and generalisation of this model are checked against our subset using Replay a Log on a Petri Net for Conformance Analysis and Measure Precision/Generalization: trace fitness = 1, precision = 0.89 and generalization = 0.98.
 
 This model shows high fitness and also high generalization. The precision is lower, so there is some behavior possible in the model which is not seen in the log. This can be explained due to our process having a loop. Since we’re confident that this model accurately represents the subset, we use it to determine the bottlenecks. The plugin Replay a Log on Petri Net for Performance/Conformance Analysis is used to obtain Figure 3. This model should be interpreted in the same manner as Figure 1.
 
 Notice that the approval and declaration steps by the budget owner or supervisor take longer than the other steps. Furthermore, on average, the budget owner and supervisor take the same amount of time to approve a declaration. However, where the budget owner takes less time to reject a declaration, the supervisor takes more time to reject a declaration. Unfortunately, it’s unclear from this model whether the supervisor is slow due to the budget owner being slow (and preceding the supervisor) or if the supervisor themselves is slow. Therefore, we are interested at the sojourn time of the supervisor preceded by the budget owner. We use Disco for this because we have noticed that there can be a large difference between the mean and median of the sojourn time and the performance analysis only shows the average sojourn time.
 
-![Architecture](/img/Performance_budget_owner_vs_supervisor.png "Figure 3: Petri net used for performance analysis on the log and model.")
+![Architecture](/img/Performance_budget_owner_vs_supervisor.png)
+
+<figcaption>
+
+Figure 3: Petri net used for performance analysis on the log and model.
+
+</figcaption>
 
 Table 1 shows an overview of the performance of several activities for the different subsets. We can see that the mean for the approved cases does not differ significanlty (around 3 days regardless of the involvement of the budget owner), while it does for the rejected cases. However, the median duration between activities differs significantly between both the approved and rejected cases. When the budget owner is not involved, the median duration is diminished for the case of approval and enlarged for the case of rejection, however rejection occurs rarely.
 
@@ -126,19 +144,25 @@ To conclude, we have two possible paths a case can take (shown in Table 2). Pass
 
 #### Bottlenecks based on manual vs. automatic verification steps
 
-In this subsection, it is interesting to find out what is causing the skewness in the performance of the model, especially very large skewness in the sojourn time for Declaration APPROVED/REJECTED by ADMINISTRATION. Preparation of subset for this analysis has been discussed in Appendix 3.1.3.
+In this subsection, it is interesting to find out what is causing the skewness in the performance of the model, especially very large skewness in the sojourn time for Declaration APPROVED/REJECTED by ADMINISTRATION. Preparation of subset for this analysis has been discussed in Appendix [Declarations Approved or Rejected by Administrator only once](/README.md#declarations-approved-or-rejected-by-administrator-only-once).
 
 We noticed a large difference between the mean and median duration of the sojourn time for Declaration APPROVED/REJECTED by ADMINISTRATION. The mean duration is 43.2 hrs, while the median duration is 7.5 minutes. We found these values using Disco. Furthermore, we found that there are 1253 traces that performed these events within one minute of submitting a request. Our hypothesis is that there is an automated process in place that determines whether a declaration can be approved or rejected. If the automated process cannot make a decision (edge cases), human intervention is required. This explains why this process can also take longer than a minute. If there is some automated process in place, this process will be deterministic. We will try to find out whether there is an automated process by finding data attributes that determine whether this decision is made within one minute, and thus by the automated process, or not.
 
-We sub-divided the event log into two subsets under 1 minute and on and over 1 minute as discussed in Appendix subsection 3.1.3. This splitting allowed us to compare the two types of subsets directly and derive a Decision Tree to determine whether this event happened within one minute based on the labelling. The “Yes” label indicates completed within a minute and “No” indicates cases took more than a minute. This decision tree could help us to understand the automated process.
+We sub-divided the event log into two subsets under 1 minute and on and over 1 minute as discussed in Appendix subsection [Declarations Approved or Rejected by Administrator only once](/README.md#declarations-approved-or-rejected-by-administrator-only-once). This splitting allowed us to compare the two types of subsets directly and derive a Decision Tree to determine whether this event happened within one minute based on the labelling. The “Yes” label indicates completed within a minute and “No” indicates cases took more than a minute. This decision tree could help us to understand the automated process.
 
-The first decision trees found were of no significant value even after hyperparameter optimization. However, each decision tree found using random forest made use of the following three decision variables: Permit OrganizationEntity, Permit RequestedBudget, and Amount with an accuracy of 65.71%, i.e. decision tree correctly predicts considering the said attributes. This decision tree has been discussed in 3.3.4 from which we derive that Permit OrganizationEntity has no significance as the results were random for each organization unit (department) and the assumed automated process rule is the same for all of them.
+The first decision trees found were of no significant value even after hyperparameter optimization. However, each decision tree found using random forest made use of the following three decision variables: Permit OrganizationEntity, Permit RequestedBudget, and Amount with an accuracy of 65.71%, i.e. decision tree correctly predicts considering the said attributes. This decision tree has been discussed in [Decision Tree on International Travel with Organisation Entity](/README.md#decision-tree-on-international-travel-with-organisation-entity) from which we derive that Permit OrganizationEntity has no significance as the results were random for each organization unit (department) and the assumed automated process rule is the same for all of them.
 
-Next, we took the PermitLogWithClassifier.xes log since it had the activities Declaration APPROVED/REJECTED by ADMINISTRATION and prepared the subset as discussed in Appendix 3.1.3 and joined it with the labelled subset of International Travel. After doing feature engineering (discussed in 3.3.1), a new attribute Overspent was found along with previous decision variables except for Permit OrganizationEntity. Consequently, we performed different classification techniques (discussed in section 3.3.2) and chose the decision tree technique since the accuracy was 68% in each technique.
+Next, we took the PermitLogWithClassifier.xes log since it had the activities Declaration APPROVED/REJECTED by ADMINISTRATION and prepared the subset as discussed in Appendix [Declarations Approved or Rejected by Administrator only once](/README.md#declarations-approved-or-rejected-by-administrator-only-once) and joined it with the labelled subset of International Travel. After doing feature engineering (discussed in [Feature Engineering](/README.md#feature-engineering) ), a new attribute Overspent was found along with previous decision variables except for Permit OrganizationEntity. Consequently, we performed different classification techniques (discussed in section [Classification Techniques](/README.md#classification-techniques) ) and chose the decision tree technique since the accuracy was 68% in each technique.
 
-The decision tree was built on same three departments discussed in 3.3.4 namely: 65456, 65458 and 65455. Figure 4 shows the decision tree, where Permit RequestedBudget is at the root followed by Overspent, and the Amount at the last node. Here “Yes” indicates completed within a minute and “No” indicates cases took more than a minute. The discretized process of continuous attributes has been briefly discussed in Appendix subsection 3.1.3. Even after sampling and hyperparameter optimization (as discussed in 3.3.3), we again did not get a significant decision tree (Figure 4), but it is more explainable and generalizable than the previous decision tree and has the accuracy of 69.52%. The conclusions we may want to draw from Figure 4 is that if the Permit RequestedBudget is within the 332.1 EUR and the Amount declared is within the budget, it will be auto approved most of the time.
+The decision tree was built on same three departments discussed in [Decision Tree on International Travel with Organisation Entity](/README.md#decision-tree-on-international-travel-with-organisation-entity) namely: 65456, 65458 and 65455. Figure 4 shows the decision tree, where Permit RequestedBudget is at the root followed by Overspent, and the Amount at the last node. Here “Yes” indicates completed within a minute and “No” indicates cases took more than a minute. The discretized process of continuous attributes has been briefly discussed in Appendix subsection [Declarations Approved or Rejected by Administrator only once](/README.md#declarations-approved-or-rejected-by-administrator-only-once). Even after sampling and hyperparameter optimization (as discussed in [Hyperparameter Optimization & Sampling](/README.md#hyperparameter-optimization--sampling) ), we again did not get a significant decision tree (Figure 4), but it is more explainable and generalizable than the previous decision tree and has the accuracy of 69.52%. The conclusions we may want to draw from Figure 4 is that if the Permit RequestedBudget is within the 332.1 EUR and the Amount declared is within the budget, it will be auto approved most of the time.
 
-![Architecture](/img/DecisionTreeFinal_.png "Figure 4: Decision Tree with attributes \texttt{Permit RequestedBudget")
+![Architecture](/img/DecisionTreeFinal_.png)
+
+<figcaption>
+
+Figure 4: Decision Tree with attributes \texttt{Permit RequestedBudget
+
+</figcaption>
 
 We also approached this problem using the Multi-Perspective Process Explorer in the hope this would give us some decision variables that indicated why some approvals/rejection seem to happen automatically while others don’t. For this, we selected the traces that occurred in 2018 and that contained Declaration REJECTED/ACCEPTED by ADMINISTRATION from the International Declarations log. We only selected the traces that occurred at least 50 times. We created a Python script that creates a distinction between the activities we suppose are done automatically and manually. The decision threshold was set at one minute. This script takes the filtered event log as an input (CSV) and outputs the new event log in-place.
 
@@ -291,21 +315,25 @@ The Amount, Permit RequestedBudget and Overspent Amount were continuous variable
 
 filename: ```Petri net of travel declarations with at least one rejection.cpn```
 
-This model is based on the subset explained in section 3.1.1. We use the Interactive Data-aware Heuristic Miner to develop a Petri net, with the following parameters.
+This model is based on the subset explained in section [Declarations rejected at least once](/README.md#declarations-rejected-at-least-once). We use the Interactive Data-aware Heuristic Miner to develop a Petri net, with the following parameters.
 
 F requency: 0.1 Dependency: 0.9 Bindings: 0.1 Conditions: 0.5
 
 Then, we export the Petri net and run the Replay a Log on Petri Net for Performance/Conformance Analysis. Accept the default settings, except for the last setting. We want to enable that move on models are assumed to be firing transitions as soon as they are enabled. You will then obtain Figure 5 as shown below. We’ve manually re-arranged the Petri net for ease of understanding.
 
-Rejected Travel Declarations - ProM - annotated.png
+![Architecture](/img/RejectedTravelDeclarations-ProM-annotated.png)
 
-![Architecture](/img/RejectedTravelDeclarations-ProM-annotated.png "Figure 5: Petri net with annotated colors for performance analysis. Note that the metrics in the top right corner are computed by a different plugin.")
+<figcaption>
+
+Figure 5: Petri net with annotated colors for performance analysis. Note that the metrics in the top right corner are computed by a different plugin.
+
+</figcaption>
 
 #### Declaration process that are handled by budget owner and/or supervisor
 
 filename: ```Supervisor vs Budget owner PN.cpn```
 
-This model is based on the subset explained in section 3.1.2. We used the Interactive Data-aware Heuristic Miner to develop a causal net.
+This model is based on the subset explained in section [Declarations approved or rejected by Budget Owner or supervisor](/README.md#declarations-approved-or-rejected-by-budget-owner-or-supervisor). We used the Interactive Data-aware Heuristic Miner to develop a causal net.
 
 We used the following parameters
 
@@ -317,7 +345,13 @@ So the causal net included 14/14 directly-follows relation occurring at least 0 
 We ended up with the following model:
 
 
-![Architecture](/img/Petrinet_Budgetowner_vs_Supervisor.png "Figure 6: Petri net, focused on the process of declaration acceptance/rejection by the budget owner/supervisor")
+![Architecture](/img/Petrinet_Budgetowner_vs_Supervisor.png)
+
+<figcaption>
+
+Figure 6: Petri net, focused on the process of declaration acceptance/rejection by the budget owner/supervisor
+
+</figcaption>
 
 
 ---
@@ -328,7 +362,7 @@ We ended up with the following model:
 
 #### Feature Engineering
 
-Performed different feature engineering techniques, as shown in the Table 3. It is quite evident from the weights that Amount is most significant in all the methods with respect to the weight. Permit RequstedBudget seems significant in two methods, i.e. Information Gain and Correlation Weight. Overspent is less significant comparatively but not neglectable; it consistently placed it self on the third most significant. Activity seems of no significance, and it gives the relative comparison for the rest attributes.
+Performed different feature engineering techniques, as shown in the below Table. It is quite evident from the weights that Amount is most significant in all the methods with respect to the weight. Permit RequstedBudget seems significant in two methods, i.e. Information Gain and Correlation Weight. Overspent is less significant comparatively but not neglectable; it consistently placed it self on the third most significant. Activity seems of no significance, and it gives the relative comparison for the rest attributes.
 
 | attributes			   | Information Gain Weight | Correlation Weight | Relief Weight |
 |--------------------------|-------------------------|--------------------|---------------|
@@ -344,7 +378,13 @@ Performed different feature engineering techniques, as shown in the Table 3. It 
 Before building the decision tree, we wanted to test how other classification technique performs, we performed the Auto ML Model to test it out, as from Figure 7 it is clear that all the classification technique was performing almost equally in terms of accuracy.
 
 
-![Architecture](/img/ClassificationTech.png "Figure 7: Accuracy of Different Classification Techniques")
+![Architecture](/img/ClassificationTech.png)
+
+<figcaption>
+
+Figure 7: Accuracy of Different Classification Techniques
+
+</figcaption>
 
 
 ####  Hyperparameter Optimization & Sampling
@@ -369,7 +409,13 @@ The optimization values for the decision tree we used were :
 Here we present the decision tree, which indicates that the process running in the every organization unit (department) is no different and the system running in the backend is the same for every organization unit. To demonstrate this, we used the top three departments with respect to there frequency, namely: 65456, 65458 and 65455, all together they constitute 45.97% of relative frequency from the entire event log. Figure 8 shows the decision tree, where “Permit OrganizationEntity” is at the root followed by “Amount”, and the ”Permit RequestedBudget” at the last node. Each leaf indicate the majority of the cases for the respective distribution with either “Yes” or “No”. The respective distribution ratio has been indicated for each leaf. The accuracy of the model is 65.71%.
 
 
-![Architecture](/img/DecisionTree_L1M_.png "Figure 8: Decision Tree")
+![Architecture](/img/DecisionTree_L1M_.png)
+
+<figcaption>
+
+Figure 8: Decision Tree
+
+</figcaption>
 
 For e.g. from Figure 8 organization unit 65456 is followed by the Amount node which has the three splits for the respective range followed by Permit RequestedBudget. However, none of the leaves for this organization unit has completed the approval within a minute as the majority because the leaves’ distribution is not significant as indicated within the orange box for each leaf. Similarly, for organization unit 65455, there is one leaf that has the approval completed within a minute, but that is not significant, and the same goes for organization unit 65458.
 
