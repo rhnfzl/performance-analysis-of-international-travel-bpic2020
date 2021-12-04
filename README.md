@@ -5,7 +5,7 @@
 ## Objective
 
 A process-mining expert should be able to reproduce the work and apply it to event-data. However, the main audience is the Finance and Control department, understand, and accept the analysis. Technical details about generating subsets and discovering models is intended for the process-mining experts.
-
+---
 ## Process and Data Description
 
 ### Process Description
@@ -54,7 +54,7 @@ Arguments should be built around at least four of your discovered models and two
 Explore other algorithms and configurations. Or look into the possibility to manually adapt your discovered models to improve their quality by using another process modeling tool. The quality of a model goes beyond technical merits such as precision and fitness. Make sure that your models are valid and meaningful in light of the research question choosen.
 
 
-
+---
 ## Report
 
 
@@ -71,6 +71,7 @@ In this report, we will be looking at the process of submitting travel declarati
 * If the request is rejected, the employee may alter their original request and resubmit; they can also waive away their request, and consequently, no costs are reimbursed.
 
 The main goal of this research is to identify possible bottlenecks in the process of submitting and approving travel declarations. The process of submitting a request (permit) for international travel is not regarded in this report. The university would like to help their employees with reimbursing their costs (to keep their employees happy), while the employees would like to have a concise and speedy process, so they don’t have to wait too long for a reimbursement, perhaps with unforeseen financial and personal consequences. It’s nigh impossible to focus on the full process at once with such a broad research question; to simplify, we focus on three different subtopics regarding the performance of the system. Each of the subtopics is looked into with greater detail and answers are sought for the subtopic. We hope to provide recommendations for these subtopics that can be combined to improve the overall performance of the process.
+
 
 #### Research questions
 
